@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Usamos Roboto como fuente principal */
+    line-height: 1.6;
+    background-color: #fcf7f7;
+    color: #333;
+}
+
+/* Ajuste para el header fijo */
+main {
+    padding-top: 70px; /* Espacio para el navbar fijo en la parte superior */
+}
+
+/* Estilos de la sección Hero */
+#hero {
+    background-color: #333; /* Color de fallback */
+    position: relative;
+    /* Sombra para el texto del hero para mejorar contraste sobre la imagen */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+#hero h1 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título principal */
+    color: white;
+}
+
+#hero p.lead {
+    color: #f0f0f0;
+}
+
+/* Estilos de la sección Sobre Nosotros y Características */
+#about-us, #features, .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem; /* Espacio entre secciones y cards */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#features .h5 {
+    color: #dc3545; /* Color rojo de Bootstrap para destacar títulos */
+}
+
+#features i {
+    color: #dc3545; /* Color de los iconos de características */
+}
+
+/* Estilos para tarjetas de menú (se usarán en menu.html) */
+.card-title {
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+.card-price {
+    font-weight: bold;
+    color: #c70000; /* Azul de Bootstrap para precios */
+    font-size: 1.2rem;
+}
+
+/* Comentario: Media Queries para diseño adaptativo (Guía 11) */
+
+/* Móviles (max-width: 480px) */
+@media (max-width: 480px) {
+    main {
+        padding-top: 56px; /* Ajuste para el navbar en móviles (Navbar más compacto) */
+    }
+
+    #hero {
+        min-height: 400px; /* Reducir altura del hero en móviles */
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p.lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    #about-us img {
+        margin-bottom: 1.5rem; /* Espacio entre imagen y texto en móvil */
+    }
+
+    .footer .col-md-6 {
+        text-align: center; /* Centrar texto en footer en móviles */
+    }
+}
+
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        padding-top: 60px; /* Ajuste para el navbar en tablets */
+    }
+    
+    #hero {
+        min-height: 450px; /* Altura del hero en tablets */
+    }
+
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    #hero p.lead {
+        font-size: 1.2rem;
+    }
+
+    .footer .col-md-6 {
+        text-align: left; /* Alinear a la izquierda en tablets */
+    }
+}
+
+/* Desktop (min-width: 769px) */
+@media (min-width: 769px) {
+    main {
+        padding-top: 75px; /* Ajuste para el navbar en desktop */
+    }
+
+    #hero h1 {
+        font-size: 4.5rem;
+    }
+
+    #hero p.lead {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .footer .col-md-6 {
+        text-align: left; /* Alinear a la izquierda en desktop */
+    }
+}

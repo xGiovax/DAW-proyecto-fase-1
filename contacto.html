@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas - El Sabor Escondido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">El Sabor Escondido</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto y Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <section id="contact-section" class="container py-5 mt-5">
+            <h1 class="text-center mb-5 display-4">Contáctanos y Haz tu Reserva</h1>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="h4 mb-3 text-danger">Información de Contacto</h2>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> 123 Calle Principal, Colonia Las Flores, Ciudad Futura</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i> Teléfono: (503) 1234-5678</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> Email: info@elsaborescondido.com</p>
+                    <p><i class="bi bi-clock-fill me-2"></i> Horarios: L-V: 12 PM - 10 PM | S-D: 11 AM - 11 PM</p>
+                    
+                    <h2 class="h4 mt-4 mb-3 text-danger">Encuéntranos en el Mapa</h2>
+                    <div class="ratio ratio-16x9 rounded shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15479.91497914902!2d-89.2223846663529!3d13.693153342080816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632f910e527d97%3A0xf63994e4f61f74f7!2sSan%20Salvador%2C%20El%20Salvador!5e0!3m2!1sen!2sv!4v1716801936302!5m2!1sen!2sv" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="h4 mb-3 text-danger">Formulario de Reservas</h2>
+                    <form action="#" method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduce tu nombre.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduce un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de Reserva:</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona una fecha.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hora" class="form-label">Hora de Reserva:</label>
+                            <input type="time" class="form-control" id="hora" name="hora" required>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona una hora.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personas" class="form-label">Número de Personas:</label>
+                            <input type="number" class="form-control" id="personas" name="personas" min="1" max="20" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduce el número de personas (entre 1 y 20).
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje Adicional:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-lg">Enviar Reserva</button>
+                    </form>
+                    <script>
+                        (function () {
+                            'use strict'
+                            var forms = document.querySelectorAll('.needs-validation')
+                            Array.prototype.slice.call(forms)
+                                .forEach(function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (!form.checkValidity()) {
+                                            event.preventDefault()
+                                            event.stopPropagation()
+                                        }
+                                        form.classList.add('was-validated')
+                                    }, false)
+                                })
+                        })()
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mb-md-0 text-md-start">
+                    <h5>El Sabor Escondido</h5>
+                    <p>123 Calle Principal, Colonia Las Flores, Ciudad Futura</p>
+                    <p>Teléfono: (503) 1234-5678</p>
+                    <p>Email: info@elsaborescondido.com</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <h5>Horarios</h5>
+                    <p>Lunes - Viernes: 12:00 PM - 10:00 PM</p>
+                    <p>Sábado - Domingo: 11:00 AM - 11:00 PM</p>
+                    <ul class="list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p>&copy; 2025 El Sabor Escondido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></script>
+</body>
+</html>

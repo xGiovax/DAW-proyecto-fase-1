@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - El Sabor Escondido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">El Sabor Escondido</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto y Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <section id="menu-section" class="container py-5 mt-5">
+            <h1 class="text-center mb-5 display-4">Nuestro Exquisito Menú</h1>
+
+            <h2 class="text-center mb-4 text-danger">Entradas</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato1.jpg" class="card-img-top img-fluid" alt="Bruschetta">
+                        <div class="card-body">
+                            <h5 class="card-title">Bruschetta Clásica</h5>
+                            <p class="card-text">Tomates frescos, albahaca, ajo y aceite de oliva sobre pan tostado.</p>
+                            <p class="card-price">$8.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato2.jpg" class="card-img-top img-fluid" alt="Calamares Fritos">
+                        <div class="card-body">
+                            <h5 class="card-title">Calamares Fritos</h5>
+                            <p class="card-text">Anillos de calamar ligeramente empanizados y fritos, servidos con alioli.</p>
+                            <p class="card-price">$12.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato3.jpg" class="card-img-top img-fluid" alt="Sopa de Lentejas">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopa de Lentejas Campesina</h5>
+                            <p class="card-text">Reconfortante sopa de lentejas con verduras de la temporada.</p>
+                            <p class="card-price">$7.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-4 text-danger">Platos Fuertes</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato4.jpg" class="card-img-top img-fluid" alt="Salmón al Horno">
+                        <div class="card-body">
+                            <h5 class="card-title">Salmón al Horno con Espárragos</h5>
+                            <p class="card-text">Filete de salmón fresco horneado a la perfección con espárragos crujientes.</p>
+                            <p class="card-price">$22.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato5.jpg" class="card-img-top img-fluid" alt="Pasta Alfredo">
+                        <div class="card-body">
+                            <h5 class="card-title">Fettuccine Alfredo con Pollo</h5>
+                            <p class="card-text">Pasta fettuccine en cremosa salsa Alfredo con tiras de pollo a la parrilla.</p>
+                            <p class="card-price">$16.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/plato6.jpg" class="card-img-top img-fluid" alt="Ribeye Steak">
+                        <div class="card-body">
+                            <h5 class="card-title">Ribeye Steak con Puré de Papa</h5>
+                            <p class="card-text">Jugoso Ribeye a la parrilla, acompañado de cremoso puré de papa y vegetales.</p>
+                            <p class="card-price">$28.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-4 text-danger">Postres</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/postre1.jpg" class="card-img-top img-fluid" alt="Tiramisú">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisú Clásico</h5>
+                            <p class="card-text">Capas de bizcochos de soletilla bañados en café, crema de mascarpone y cacao.</p>
+                            <p class="card-price">$7.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/postre2.jpg" class="card-img-top img-fluid" alt="Cheesecake">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheesecake de Frutos Rojos</h5>
+                            <p class="card-text">Cremoso pastel de queso con una cobertura de frutos rojos frescos.</p>
+                            <p class="card-price">$8.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mb-md-0 text-md-start">
+                    <h5>El Sabor Escondido</h5>
+                    <p>123 Calle Principal, Colonia Flores, Ciudad Futura</p>
+                    <p>Teléfono: (503) 1234-5678</p>
+                    <p>Email: info@elsaborescondido.com</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <h5>Horarios</h5>
+                    <p>Lunes - Viernes: 12:00 PM - 10:00 PM</p>
+                    <p>Sábado - Domingo: 11:00 AM - 11:00 PM</p>
+                    <ul class="list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p>&copy; 2025 El Sabor Escondido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

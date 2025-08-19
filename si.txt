@@ -1,0 +1,5 @@
+-carrito
+-facturacion con carrito
+-QR DE MENU
+-login o pedir infromacion en el carrito de una
+-
